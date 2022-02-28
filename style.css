@@ -1,0 +1,230 @@
+/* TABLE OF CONTENT */
+/* ----------------------
+/* 1. General
+2. Navbar
+3. Banner
+4. Service
+5. Blog
+6. Contact
+7. Footer */
+
+
+/* 1. General */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+ * {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+:root{
+    /* background-color */
+    --secondary-color:#f77949;
+    --blue:#37418e;
+    --bg-white:#fff;
+    --bg-dark-blue:#292b70;
+    --bg-gray:#ecf0f9;
+
+
+    /* text-color */
+    --text-black:#1f1f1f;
+    --text-blue:#37418e;
+    --text-gray:#6d6e7b;
+    --text-white:#fff;
+
+
+    /* fonts */
+    --primary-font:'Roboto Condensed', sans-serif;;
+    --secondary-font:'Open Sans', sans-serif;
+}
+
+body{
+    font-family: var(--secondary-font);
+    background-image: url(./images/images/page-background.jpg)!important;
+    background-size: cover;
+    background-position: center 0px;
+    background-repeat: no-repeat;
+    background-attachment: initial;
+    overflow-x: hidden;
+}
+
+/* Custom Css */
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background: var(--bg-gray);
+    
+}
+::-webkit-scrollbar-thumb{
+    background: var(--secondary-color);
+    
+}
+section{
+    padding: 50px 0;
+}
+.main-btn{
+    display: inline-block;
+    border-radius: 26px;
+    transition: 0.5s !important;
+    padding: 10px 37px;
+    background-color: var(--secondary-color);
+    color: var(--text-white);
+    font-weight: 700;
+    font-family: var(--primary-font);
+    font-size: 17px;
+    text-decoration: none;
+    box-shadow: 0 0 1px rgb(0 0 0 / 0%);
+}
+
+.main-btn:hover{
+    background-color:var(--blue);
+    color: var(--text-white);
+}
+
+h1{
+    font-size: 65px;
+    font-family: var(--primary-font);
+    font-weight: 700;
+    color: var(--text-blue);
+    margin-bottom: 16px;
+}
+
+h2{
+    font-size: 45px;
+    font-family: var(--primary-font);
+    font-weight: 700;
+    color: var(--text-blue);
+    margin-bottom: 14px;
+    letter-spacing: 0;
+    line-height: 64px;
+}
+
+h3{
+    font-size: 30px;
+    font-family: var(--primary-font);
+    font-weight: 700;
+    color: var(--text-blue);
+    margin-bottom: 14px;
+    letter-spacing: 0;
+    
+}
+p{
+    color: var(--text-gray);
+    font-size: 15px;
+    line-height: 28px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+input:hover,
+input:focus,
+textarea:focus,
+textarea:hover,
+button{
+    border-color: var(--secondary-color)!important;
+    outline: none!important;
+    box-shadow: none!important;
+}
+/* 2. navbar */
+.navbar{
+    transition: all.2s linear;
+    -o-transition: all.2s linear;
+    -webkit-transition: all.2s linear;
+
+
+}
+.navbar-brand img{
+    max-width: 150px;
+    height: auto;
+}
+.navbar-toggler{
+    box-shadow: none;
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+.nav-item{
+    margin: 0 10px;
+}
+.nav-link{
+    font-size: 17px;
+    font-weight: 700;
+    color:var(--text-blue);
+    font-family: var(--primary-font);
+    text-transform: uppercase;
+}
+.nav-link.active{
+    color: var(--secondary-color)!important;
+}
+.header-scrolled{
+    position: fixed;
+    margin-top: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 85px;
+    background-color: var(--bg-white);
+    box-shadow: 0 4px 6px 0 rgba(12, 0, 46, .05);
+    -webkit-box-shadow: 0 4px 6px 0 rgba(12, 0, 46, .05);
+
+}
+/* 3. banner */
+.banner-wrapper{
+    padding: 100px;
+}
+/* 4. service */
+.service-wrapper h3 span{
+    color: var(--secondary-color);
+}
+.blog-wrapper{
+    background-color: var(--bg-dark-blue);
+}
+.newsletter{
+    width: 50%;
+    margin: auto;
+}
+.form-control{
+    border-color: var(--bg-dark-blue);
+    border-style: solid;
+    border-radius: 26px;
+    color: var(--text-white);
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 400;
+    padding: 10px 32px;
+}
+/* 5. Blog */
+.blog-card{
+    padding-bottom: 50px;
+}
+/* 6. Contact */
+
+.date,
+.card a:hover{
+    color: var(--secondary-color);
+}
+input,
+textarea{
+    background-color: var(--bg-white);
+    border-color: var(--bg-gray);
+    border-radius: 15px;
+    color: var(--text-gray);
+    font-size: 15px;
+    font-weight: 400;
+    padding: 15px 21px 15px 21px;
+}
+/* 7. footer */
+.footer-wrapper a{
+    color: var(--text-gray);
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+
+}
+
+.footer-wrapper li:hover{
+    color: var(--secondary-color)!important;
+}

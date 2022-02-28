@@ -1,0 +1,59 @@
+@media(max-width:1400px){
+    /* 4. service */
+
+}
+@media(max-width:1230px){
+    /* 4. service */
+    
+}
+
+@media(max-width:991px){
+    /* 4. Custom css */
+    section{
+        padding: 20px 0;
+    }
+    h1{
+        font-size: 50px;
+    }
+    h2{
+        font-size: 30px;
+        line-height: 40px;
+    }
+    h3{
+        font-size: 20px;
+    }
+    /* 2.navbar */
+    .header-scrolled{
+        height: auto;
+    }
+    .menu-navbar-nav{
+        text-align: center;
+        background-color: var(--bg-white);
+        padding-bottom: 15px;
+    }
+    .nav-link{
+        margin-top: 15px;
+    }
+    /* Blog */
+}
+
+
+
+@media(max-width:767px){
+    /* custom css */
+    h1{
+        font-size: 30px;
+
+    }
+    h3{
+        font-size: 22px;
+    }
+    p{
+        font-size: 13px;
+    }
+    .main-btn{
+        font-size: 13px;
+    }
+    /* 4. service */
+    
+}
